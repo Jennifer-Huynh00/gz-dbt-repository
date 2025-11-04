@@ -10,10 +10,9 @@ renamed as (
 
     select
         products_id,
-        purchse_price AS purchase_price
-        CAST (purchase_price AS FLOAT64 )
-
+    CAST (purchse_price AS FLOAT64 ) AS purchase_price
     from source
+
 
 )
 
