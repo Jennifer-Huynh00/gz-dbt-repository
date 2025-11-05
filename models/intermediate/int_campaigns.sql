@@ -1,10 +1,11 @@
 SELECT *
- FROM {{ref('stg_gz_raw_data__adwords.sql')}}
+ FROM {{ref('stg_gz_raw_data__adwords')}}
  UNION ALL
  SELECT *
- FROM {{ref('stg_gz_raw_data__bing.sql')}}
- SELECT *
- FROM {{ref('stg_gz_raw_data__criteo.sql')}}
+ FROM {{ref('stg_gz_raw_data__bing')}}
  UNION ALL
  SELECT *
- FROM {{ref('stg_gz_raw_data__facebook.sql')}}
+ FROM {{ref('stg_gz_raw_data__criteo')}}
+ UNION ALL
+ SELECT *
+ FROM {{ref('stg_gz_raw_data__facebook')}}
