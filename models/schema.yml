@@ -48,26 +48,20 @@ models:
   - name: int_orders_margin.sql
     description: intermediate orders margin
 
-models:
   - name: int_orders_operational.sql
     description: intermediate orders operational
 
-models:
   - name: int_sales_margin.sql
     description: intermediate orders margin
-  
-models:
+
   - name: finance_days.sql
     description: finance days
 
-models:
   - name: stg_gz_raw_data__product.sql
     description: greenweez raw data product
 
-models:
   - name: stg_gz_raw_data__sales.sql
     description: greenweez raw data sales 
 
-models:
   - name: stg_gz_raw_data__ship.sql
     description: greenweez raw data ship
