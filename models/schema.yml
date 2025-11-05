@@ -31,3 +31,43 @@ sources:
             tests:
             - unique
             - not_null
+      - name: adwords
+        identifier: raw_gz_adwords
+        description: adwords
+      - name: bing
+        identifier: raw_gz_bing
+        description: bing
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: criteo
+      - name: facebook
+        identifier: raw_gz_facebook
+        description: facebook
+
+models:
+  - name: int_orders_margin.sql
+    description: intermediate orders margin
+
+models:
+  - name: int_orders_operational.sql
+    description: intermediate orders operational
+
+models:
+  - name: int_sales_margin.sql
+    description: intermediate orders margin
+  
+models:
+  - name: finance_days.sql
+    description: finance days
+
+models:
+  - name: stg_gz_raw_data__product.sql
+    description: greenweez raw data product
+
+models:
+  - name: stg_gz_raw_data__sales.sql
+    description: greenweez raw data sales 
+
+models:
+  - name: stg_gz_raw_data__ship.sql
+    description: greenweez raw data ship
