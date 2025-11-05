@@ -1,8 +1,9 @@
+{{config(materialized="table")}}
+
 select
     date_date,
     COUNT(orders_operational.orders_id) AS nb_transactions,
     ROUND(SUM(revenue),2) AS Total_revenue,
-    ROUND(SUM(revenue) / Count (DISTINCT orders_id),0) AS average_baskets,
     ROUND(SUM(Operational_margin),2) AS Operational_margin,
     ROUND(SUM(purchase_cost),2) AS total_purchase_cost,
     ROUND(SUM(shipping_fee),2) AS total_shipping_fee,
